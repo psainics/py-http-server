@@ -1,0 +1,7 @@
+curl -X GET "http://127.0.0.1:8000/api/test" && echo ""
+curl -X PUT "http://127.0.0.1:8000/api/test" -H "Content-Type: application/json" -d "{\"test\": \"data\"}" && echo ""
+curl -X POST "http://127.0.0.1:8000/api/test" -H "Content-Type: application/json" -d "{\"test\": \"data\"}" && echo "" 
+curl -X DELETE "http://127.0.0.1:8000/api/test" && echo ""
+curl -X PATCH "http://127.0.0.1:8000/api/test" -H "Content-Type: application/json" -d "{\"test\": \"data\"}" && echo ""
+curl -X POST "http://127.0.0.1:8000/api/test" -H "Content-Type: application/x-www-form-urlencoded" -d "test=data" && echo ""
+curl -X PATCH "http://127.0.0.1:8000/api/data" && echo "" 
